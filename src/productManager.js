@@ -45,6 +45,13 @@ export function aplicarDescuentosATodos( descuento) {
         producto.descuento = descuento;
     });
 }
+export function mostrarProductos() {
+    const productos = inventario.getAllProductos();
+    productos.forEach(producto => {
+        console.log(producto.imprimirValores());
+    });
+}
+
 
 
 
