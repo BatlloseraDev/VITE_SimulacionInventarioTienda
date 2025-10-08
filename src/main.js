@@ -1,31 +1,27 @@
 import './style.css'
 import './productManager.js'
-import { agregarProducto, eliminarProducto, calcularValorTotal, aplicarDescuento, mostrarProductos } from  './productManager.js'
+import { agregarProducto, eliminarProducto, calcularValorTotal, aplicarDescuento, mostrarProductos, aplicarDescuentosATodos } from  './productManager.js'
 
 
 
+console.log("Tienda");
+console.log(mostrarProductos());
+console.log("agregando producto");
+console.log(agregarProducto("kiwis", 2.0, 30));
+console.log(mostrarProductos());
+console.log("eliminando producto id:1");
+console.log(eliminarProducto(1));
+console.log(mostrarProductos());
+console.log("calculando valor total");
+console.log(calcularValorTotal());
+console.log("aplicando descuento al producto id:2");
+console.log(aplicarDescuento(2, 10));
+console.log(mostrarProductos());
+console.log(calcularValorTotal());
+console.log("aplicando descuento a todos los productos");
+console.log(aplicarDescuentosATodos(25));
+console.log(mostrarProductos());
+console.log(calcularValorTotal());
 
 
-// import javascriptLogo from './javascript.svg'
-// import viteLogo from '/vite.svg'
-// import { setupCounter } from './counter.js'
 
-// document.querySelector('#app').innerHTML = `
-//   <div>
-//     <a href="https://vite.dev" target="_blank">
-//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-//     </a>
-//     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-//       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-//     </a>
-//     <h1>Hello Vite!</h1>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//     <p class="read-the-docs">
-//       Click on the Vite logo to learn more
-//     </p>
-//   </div>
-// `
-
-// setupCounter(document.querySelector('#counter'))

@@ -41,15 +41,18 @@ export function aplicarDescuento(id, descuento) {
 }
 
 export function aplicarDescuentosATodos( descuento) {
-    inventario.forEach(producto => {
+    inventario.productos.forEach(producto => {
         producto.descuento = descuento;
     });
 }
 export function mostrarProductos() {
+    // let cadenaMensajes = [];
     const productos = inventario.getAllProductos();
     productos.forEach(producto => {
+        // cadenaMensajes.push(producto.imprimirValores());
         console.log(producto.imprimirValores());
     });
+    //return cadenaMensajes;
 }
 
 
