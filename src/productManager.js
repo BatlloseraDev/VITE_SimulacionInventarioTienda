@@ -33,6 +33,18 @@ export function calcularValorTotal() {
     return valorTotal;
 }
 
+export function aplicarDescuento(id, descuento) {
+    const producto = inventario.getProductoById(id);
+    if (producto) {
+        producto.descuento = descuento;
+    }
+}
+
+export function aplicarDescuentosATodos( descuento) {
+    inventario.forEach(producto => {
+        producto.descuento = descuento;
+    });
+}
 
 
 
