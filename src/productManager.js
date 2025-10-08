@@ -25,6 +25,15 @@ export function eliminarProducto(id) {
 
 
 
+export function calcularValorTotal() {
+    let valorTotal = 0;
+    inventario.productos.forEach(producto => {
+        valorTotal += (producto.precio-(producto.precio*producto.descuento/100) )* producto.stock;
+    });
+    return valorTotal;
+}
+
+
 
 
 
