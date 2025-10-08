@@ -19,6 +19,10 @@ export function agregarProducto(nombre, precio, stock) {
     inventario.addProducto(producto);
 }
 
+export function eliminarProducto(id) {
+    inventario.removeProducto(id);
+}
+
 
 
 
